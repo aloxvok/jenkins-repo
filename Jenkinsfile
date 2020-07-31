@@ -1,16 +1,10 @@
 pipeline {
-  agent any
-  stages {
-    stage('Build'){
-      steps{
-      echo "This should run on the BUILD stage"
-      echo "second step on Build""
-     }
+    agent any
+    stages {
+        stage("First Stage") {
+            steps {
+                echo "This is a single line shell"
+            }
+        } 
     }
-    stage('Test') {
-      steps {
-        echo "This is a Test stged step"
-      }
-    }
-  }
 }
