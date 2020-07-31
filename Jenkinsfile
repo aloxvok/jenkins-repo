@@ -7,5 +7,10 @@ pipeline {
       echo "second step on Build""
      }
     }
+    stage('Test') {
+      steps {
+        echo "This is a Test stged step"
+      }
+    }
   }
 }
