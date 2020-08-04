@@ -7,6 +7,13 @@ pipeline {
         echo "Second step on BUILD"
       }
     }
+ stage('Test') {
+      steps {
+        echo "This is a TEST stage step"
+        echo "Just one more dummy step"
+        echo "Adding garbage"
+      }
+    }
     stage('Test') {
       steps {
         echo "This is a TEST stage step"
@@ -23,13 +30,5 @@ pipeline {
         echo "hello everybody!"
       }
     }
-    stage('Test') {
-      steps {
-        echo "This is a TEST stage step"
-        echo "Just one more dummy step"
-        echo "Adding garbage"
-      }
-    }
-	  
   }
 }
