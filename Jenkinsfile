@@ -22,7 +22,14 @@ pipeline {
         echo "This is a DEPLOY stage step"
         echo "hello everybody!"
       }
-
-}
+    }
+    stage('Test') {
+      steps {
+        echo "This is a TEST stage step"
+        echo "Just one more dummy step"
+        echo "Adding garbage"
+      }
+    }
+	  
   }
 }
